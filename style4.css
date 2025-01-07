@@ -1,0 +1,67 @@
+/*CSS Document*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #042350;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: #F65C02;
+}
+
+.item1{
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    background-color: #042350;
+}
+.item2{
+    height: 600px;
+
+    border-radius: 10%;
+}
+.item3{
+    height: 600px;
+    
+
+}
+.item4{
+    height: 600px;
+  
+    border-radius: 10%;
+    text-align: left;
+    border: #F65C02 solid 10px;
+}
+body{
+background-color: #042350;
+}
+img{
+  border-radius: 5%;
+}
+a:hover{
+  box-shadow: 2px #000000;
+}
+.logo{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+}
+em .item5{
+  font-style: italic;
+  font-size: 12px;
+}
